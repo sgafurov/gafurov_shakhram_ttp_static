@@ -23,7 +23,7 @@
 <script> //tag used to refer to JavaScript code
 //var d = new Date(); //provides current date and time
 //let x = document.getElementById("time").innerHTML = d.toLocaleTimeString(); //"innerHTML is often used to set and modify the contents of a <p> element"
-setInterval(getTheTime(),60);
+setInterval(getTheTime(),getMilliseconds(),60);
   
 function getTheTime(){
   var d = new Date(); //provides current date and time
