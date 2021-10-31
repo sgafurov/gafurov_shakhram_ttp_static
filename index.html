@@ -23,11 +23,9 @@
 
 <script> //tag used to refer to JavaScript code
 //var d = new Date(); //provides current date and time
-//let x = document.getElementById("time").innerHTML = d.toLocaleTimeString(); //"innerHTML is often used to set and modify the contents of a <p> element"
+//document.getElementById("time").innerHTML = d.toLocaleTimeString();  //"innerHTML is often used to set and modify the contents of a <p> element"
 //setInterval(getTheTime(),getMilliseconds(),60);
   
-  var d = new Date(); //provides current date and time
-  //document.getElementById("time").innerHTML = d.toLocaleTimeString();
   setInterval(document.getElementById("time").innerHTML = new Date().toLocaleTimeString(), 1000);
   
 </script>
