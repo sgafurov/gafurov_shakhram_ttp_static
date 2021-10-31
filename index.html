@@ -11,32 +11,33 @@
 
 <body>
 
-  <h1> My name is Shakhram Gafurov and I love to... </h1>
+  <container> 
+    <h1> My name is Shakhram Gafurov and I love to... </h1>
 
-  <p>
-    &#128761; skateboard
-  </p>
+    <p class="large">
+      &#128761; skateboard
+    </p>
 
-  <p>
-    &#9749; go cafe-hopping
-  </p>
+    <p class="large">
+      &#9749; go cafe-hopping
+    </p>
 
-  <p>
-    &#128187; code with my cat
-  </p>
+    <p class="large">
+      &#128187; code with my cat
+    </p>
 
-  <div>The Current Time Is: <span id="time"></span></div>
-
+    <div class="outline">
+      The Current Time Is: <span id="time"></span>
+    </div>
+  </container>
 
   <script> //this tag used to refer to JavaScript code
 
-    //innerHTML is often used to set and modify the contents of a <p> element
+    const timeText = document.getElementById("time");
 
-    const timeText = document.getElementById("time")
-
-    setInterval(() => { //anonymous function
-      timeText.innerText = new Date().toLocaleTimeString()
-    }, 1000)
+    setInterval(() => { //anonymous function. setInterval updates time every second
+      timeText.innerText = new Date().toLocaleTimeString();
+    }, 1000); //in 1000 milliseconds
 
   </script>
 

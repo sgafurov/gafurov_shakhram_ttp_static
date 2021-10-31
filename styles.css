@@ -1,4 +1,4 @@
-body {
+body { /*applies to everything on the page unless the page element uses one of the classes below*/
   margin: 0;
   background: black;
   text-align: center;
@@ -8,6 +8,19 @@ body {
   font-style: normal;
 }
 
-p {
+.large {
   font-size: 48px;
+}
+
+.outline { /*creates border for the time div*/
+  margin-top: 50px;
+  width: 30%;
+  padding: 5px;
+  border: 1px dashed white;
+}
+
+container { /*html body wrapped in this tag will all be applied the format specified below*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
