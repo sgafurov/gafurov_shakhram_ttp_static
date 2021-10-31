@@ -18,14 +18,11 @@
   &#128187; code by the window on rainy days
 </p>
   
-<p style="font-size:48px">
-  the current time is: 
-  
-  <p>Date/Time: <span id="datetime"></span></p>
+  <p>The Current Time Is: <span id="time"></span></p>
 
 <script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
+var d = new Date();
+document.getElementById("time").innerHTML = d.toLocaleTimeString();
 </script>
   
 <!--   <script type="text/javascript">
@@ -34,7 +31,5 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
   console.log(today.getTime());
   //var displayTime = date.toLocaleTimeString();
 </script> -->
-  
-</p>
   
 </html>
