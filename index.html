@@ -7,29 +7,23 @@
 <h1> My name is Shakhram Gafurov and I love to... </h1>
 
 <p style="font-size:48px">
-  &#128761; skateboard on nicely paved roads
+  &#128761; skateboard
 </p>
 
 <p style="font-size:48px">
-  &#9749; go cafe-hopping on sunday mornings
+  &#9749; go cafe-hopping
 </p>
 
 <p style="font-size:48px">
-  &#128187; code by the window on rainy days
+  &#128187; code with my cat
 </p>
   
   <p>The Current Time Is: <span id="time"></span></p>
 
-<script>
-var d = new Date();
-document.getElementById("time").innerHTML = d.toLocaleTimeString();
+<script> //tag used to refer to JavaScript code
+var d = new Date(); //provides current date and time
+document.getElementById("time").innerHTML = d.toLocaleTimeString(); //"innerHTML is often used to set and modify the contents of a <p> element"
+setInterval(d);
 </script>
-  
-<!--   <script type="text/javascript">
-  const today = new Date();
-  //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  console.log(today.getTime());
-  //var displayTime = date.toLocaleTimeString();
-</script> -->
   
 </html>
