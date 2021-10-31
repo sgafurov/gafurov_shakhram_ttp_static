@@ -21,9 +21,16 @@
   <p>The Current Time Is: <span id="time"></span></p>
 
 <script> //tag used to refer to JavaScript code
-var d = new Date(); //provides current date and time
-let x = document.getElementById("time").innerHTML = d.toLocaleTimeString(); //"innerHTML is often used to set and modify the contents of a <p> element"
-setInterval(x);
+//var d = new Date(); //provides current date and time
+//let x = document.getElementById("time").innerHTML = d.toLocaleTimeString(); //"innerHTML is often used to set and modify the contents of a <p> element"
+setInterval(getTheTime());
+  
+function getTheTime(){
+  var d = new Date(); //provides current date and time
+  let x = document.getElementById("time").innerHTML = d.toLocaleTimeString();
+ console.log(x);
+}
+  
 </script>
   
 </html>
