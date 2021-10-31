@@ -19,14 +19,21 @@
 </p>
   
 <p style="font-size:48px">
-  the current time is: <span id='date-time'></span>
+  the current time is: 
   
-  <script type="text/javascript">
+  <p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+  
+<!--   <script type="text/javascript">
   const today = new Date();
   //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   console.log(today.getTime());
   //var displayTime = date.toLocaleTimeString();
-</script>
+</script> -->
   
 </p>
   
