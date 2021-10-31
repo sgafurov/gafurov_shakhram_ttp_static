@@ -1,1 +1,9 @@
-
+body {
+  margin: 0;
+  background: black;
+  text-align: center;
+  color: white;
+  font-family: courier new;
+  font-size: 22px;
+  font-style: normal;
+}
