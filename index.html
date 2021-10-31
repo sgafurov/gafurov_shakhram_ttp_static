@@ -18,8 +18,7 @@
   &#128187; code with my cat
 </p>
   
-<div <p>The Current Time Is: <span id="time"></span></p>
-</div>
+<div>The Current Time Is: <span id="time"></span></div>
   
 
 <script> //tag used to refer to JavaScript code
@@ -31,8 +30,8 @@ geTheTime();
 function getTheTime(){
   var d = new Date(); //provides current date and time
   document.getElementById("time").innerHTML = d.toLocaleTimeString();
- //console.log(x);
- setInterval(getTheTime(), 1000);
+  let x = setInterval(getTheTime(), 1000);
+  console.log(x);
 }
   
 </script>
