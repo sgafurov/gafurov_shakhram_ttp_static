@@ -1,37 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gafurov Shakhram</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<link rel="stylesheet" href="styles.css">
+<body>
 
-<h1> My name is Shakhram Gafurov and I love to... </h1>
+  <h1> My name is Shakhram Gafurov and I love to... </h1>
 
-<p style="font-size:48px">
-  &#128761; skateboard
-</p>
+  <p style="font-size:48px">
+    &#128761; skateboard
+  </p>
 
-<p style="font-size:48px">
-  &#9749; go cafe-hopping
-</p>
+  <p style="font-size:48px">
+    &#9749; go cafe-hopping
+  </p>
 
-<p style="font-size:48px">
-  &#128187; code with my cat
-</p>
-  
-<div>The Current Time Is: <span id="time"></span></div> 
-  
+  <p style="font-size:48px">
+    &#128187; code with my cat and dog
+  </p>
 
-<script> //this tag used to refer to JavaScript code
+  <div>The Current Time Is: <span id="time"></span></div>
 
-//innerHTML is often used to set and modify the contents of a <p> element
 
-  const timeText = document.getElementById("time")
-  
-  setInterval(()=>{ //anonymous function
-  timeText.innerText = new Date().toLocaleTimeString()
-  }, 1000)
-  
-  
-</script>
-  
+  <script> //this tag used to refer to JavaScript code
+
+    //innerHTML is often used to set and modify the contents of a <p> element
+
+    const timeText = document.getElementById("time")
+
+    setInterval(() => { //anonymous function
+      timeText.innerText = new Date().toLocaleTimeString()
+    }, 1000)
+
+  </script>
+
+</body>
+
 </html>
