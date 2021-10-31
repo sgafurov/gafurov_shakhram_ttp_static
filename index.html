@@ -18,16 +18,16 @@
   &#128187; code with my cat
 </p>
   
-<div>The Current Time Is: <span id="time"></span></div> //span is a like a container
+<div>The Current Time Is: <span id="time"></span></div> 
   
 
-<script> //tag used to refer to JavaScript code
-//var d = new Date(); //provides current date and time
-//document.getElementById("time").innerHTML = d.toLocaleTimeString();  //"innerHTML is often used to set and modify the contents of a <p> element"
-//setInterval(getTheTime(),getMilliseconds(),60);
+<script> //this tag used to refer to JavaScript code
+
+//innerHTML is often used to set and modify the contents of a <p> element
+
   const timeText = document.getElementById("time")
   
-  setInterval(()=>{
+  setInterval(()=>{ //anonymous function
   timeText.innerText = new Date().toLocaleTimeString()
   }, 1000)
   
